@@ -1,0 +1,6 @@
+#Github configuration
+[Github]
+#Here the AccessToken has to be set
+#check out: https://github.com/blog/1509-personal-api-tokens for step by step guide
+#Rename the file to github_config.toml afterwards and start poprep
+AccessToken = "xxx"

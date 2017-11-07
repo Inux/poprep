@@ -1,0 +1,66 @@
+#All supported awesome lists
+[AwesomeLists]
+    #go by avelino 
+    [AwesomeLists.go]
+    Name = "awesome-go"
+    Author = "avelino"
+    URL = "https://raw.githubusercontent.com/avelino/awesome-go/master/README.md"
+    StartLine = "### Contents"         
+    NamePrefix = "["   
+    NamePostfix = "]"      
+    URLPrefix = "("         
+    URLPostfix = ")"      
+    CategoryIdentifier = "##"
+    CategoryIdentifierSingle = "#"
+
+    #groovy by kdabir 
+    [AwesomeLists.groovy]
+    Name = "awesome-groovy"
+    Author = "kdabir"
+    URL = "https://raw.githubusercontent.com/kdabir/awesome-groovy/master/README.md"
+    StartLine = "## Build tools and Setup"         
+    NamePrefix = "["   
+    NamePostfix = "]"      
+    URLPrefix = "("         
+    URLPostfix = ")"      
+    CategoryIdentifier = "##"
+    CategoryIdentifierSingle = "#"
+
+    #python by vinta 
+    [AwesomeLists.python]
+    Name = "awesome-python"
+    Author = "vinta"
+    URL = "https://raw.githubusercontent.com/vinta/awesome-python/master/README.md"
+    StartLine = "## Admin Panels"         
+    NamePrefix = "["   
+    NamePostfix = "]"      
+    URLPrefix = "("         
+    URLPostfix = ")"      
+    CategoryIdentifier = "##"
+    CategoryIdentifierSingle = "#"
+
+    #swift by matteocrippa 
+    [AwesomeLists.swift]
+    Name = "awesome-swift"
+    Author = "matteocrippa"
+    URL = "https://raw.githubusercontent.com/matteocrippa/awesome-swift/master/README.md"
+    StartLine = "### Official Guides"         
+    NamePrefix = "["   
+    NamePostfix = "]"      
+    URLPrefix = "("         
+    URLPostfix = ")"      
+    CategoryIdentifier = "##"
+    CategoryIdentifierSingle = "#"
+
+    #javascript by sorrycc 
+    [AwesomeLists.javascript]
+    Name = "awesome-javascript"
+    Author = "sorrycc"
+    URL = "https://raw.githubusercontent.com/sorrycc/awesome-javascript/master/README.md"
+    StartLine = "## Package Managers"         
+    NamePrefix = "["   
+    NamePostfix = "]"      
+    URLPrefix = "("         
+    URLPostfix = ")"      
+    CategoryIdentifier = "##"
+    CategoryIdentifierSingle = "#"
