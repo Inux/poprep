@@ -40,7 +40,14 @@ type PoprepConfig struct {
 	AwesomeLists map[string]AwesomeListConfig
 }
 
+//AwesomeLists is the config structure for awesomelists
+//used to parse poprep_config.toml
+type AwesomeLists struct {
+	AwesomeMap map[string]AwesomeListConfig
+}
+
 //GithubAPIconfig contains the Github API configuration
+//used to parse github_config.toml
 type GithubAPIconfig struct {
 	AccessToken string
 }
@@ -77,15 +84,36 @@ type RepoInfo struct {
 }
 
 //New reads PoprepConfig from toml file
-func New(configpath string) (PoprepConfig, error) {
+func New(awesomeListConfig, githubConfig string) (PoprepConfig, error) {
+	//Create empty PoprepConfig
 	conf := &PoprepConfig{}
-	data, err := ioutil.ReadFile(configpath)
+	//Create empty AwesomListConfig
+	alc := &AwesomeLists{}
+	//Create empty GithubConfig
+	ghc := &GithubAPIconfig{}
+
+	//Read and decode alc
+	dAlc, err := ioutil.ReadFile(awesomeListConfig)
 	if err != nil {
-		return *conf, errors.New("Could not find poprep config file")
+		return *conf, errors.New("Could not find poprep_config.toml file")
 	}
-	if _, err = toml.Decode(string(data), &conf); err != nil {
-		logrus.Info("Could not parse configuration")
-		return *conf, errors.New("Could not parse poprep config file")
+	if _, err = toml.Decode(string(dAlc), &alc); err != nil {
+		logrus.Info("Could not parse poprep_config.toml configuration")
+		return *conf, errors.New("Could not parse poprep_config.toml file")
 	}
+
+	//Read and decode ghc
+	dGhc, err := ioutil.ReadFile(githubConfig)
+	if err != nil {
+		return *conf, errors.New("Could not find github_config.toml file")
+	}
+	if _, err = toml.Decode(string(dGhc), &ghc); err != nil {
+		logrus.Info("Could not parse github_config.toml configuration")
+		return *conf, errors.New("Could not parse github_config.toml file")
+	}
+
+	conf.AwesomeLists = alc.AwesomeMap
+	conf.Github = *ghc
+
 	return *conf, nil
 }

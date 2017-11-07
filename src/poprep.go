@@ -5,11 +5,12 @@ import (
 )
 
 const (
-	configfullname = "poprep_config.toml"
+	awesomeListConfig = "poprep_config.toml"
+	githubConfig      = "github_config.toml"
 )
 
 func main() {
 	//init and run poprep
-	pr.Init(configfullname)
+	pr.Init(awesomeListConfig, githubConfig)
 	pr.RunCli()
 }

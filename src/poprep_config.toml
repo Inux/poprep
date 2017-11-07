@@ -1,7 +1,7 @@
 #All supported awesome lists
 [AwesomeLists]
     #go by avelino 
-    [AwesomeLists.go]
+    [AwesomeMap.go]
     Name = "awesome-go"
     Author = "avelino"
     URL = "https://raw.githubusercontent.com/avelino/awesome-go/master/README.md"
@@ -14,7 +14,7 @@
     CategoryIdentifierSingle = "#"
 
     #groovy by kdabir 
-    [AwesomeLists.groovy]
+    [AwesomeMap.groovy]
     Name = "awesome-groovy"
     Author = "kdabir"
     URL = "https://raw.githubusercontent.com/kdabir/awesome-groovy/master/README.md"
@@ -27,7 +27,7 @@
     CategoryIdentifierSingle = "#"
 
     #python by vinta 
-    [AwesomeLists.python]
+    [AwesomeMap.python]
     Name = "awesome-python"
     Author = "vinta"
     URL = "https://raw.githubusercontent.com/vinta/awesome-python/master/README.md"
@@ -40,7 +40,7 @@
     CategoryIdentifierSingle = "#"
 
     #swift by matteocrippa 
-    [AwesomeLists.swift]
+    [AwesomeMap.swift]
     Name = "awesome-swift"
     Author = "matteocrippa"
     URL = "https://raw.githubusercontent.com/matteocrippa/awesome-swift/master/README.md"
@@ -53,7 +53,7 @@
     CategoryIdentifierSingle = "#"
 
     #javascript by sorrycc 
-    [AwesomeLists.javascript]
+    [AwesomeMap.javascript]
     Name = "awesome-javascript"
     Author = "sorrycc"
     URL = "https://raw.githubusercontent.com/sorrycc/awesome-javascript/master/README.md"

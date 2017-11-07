@@ -16,7 +16,7 @@ var cliapp = &cli.App{}
 var logger = &logrus.Logger{}
 
 //Init initializes poprep config full name has to be provided
-func Init(configfullname string) {
+func Init(awesomeListConfig, githubConfig string) {
 	//initializing logrus
 	prlog.New()
 	logger = prlog.Get()
@@ -24,7 +24,7 @@ func Init(configfullname string) {
 	logger.Info("initialize poprep - started")
 	//read configuration
 	logger.Info("reading config - started")
-	tc, err := prconf.New(configfullname)
+	tc, err := prconf.New(awesomeListConfig, githubConfig)
 	if err != nil {
 		logger.Fatal("couldn't read configuration: ", err.Error())
 	}
